@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <title>Document</title>
 </head>
 <body>
     <div id="app">
-        
+        <div class="list-container">
+            <ul class="email-list">
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+                <li>email:</li>
+            </ul>
+        </div>
+        <button type="button" @click="getEmailFromApi()">Genera email</button>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
