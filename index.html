@@ -11,11 +11,10 @@
 <body>
     <div id="app">
         <div class="list-container">
-            <ul class="email-list">
+            <ul v-if="emailsArray.length > 9" class="email-list">
                 <li  v-for="(element, index) in emailsArray">email: {{element}}</li>
             </ul>
         </div>
-        <button type="button" @click="getEmailFromApi()">Genera email</button>
     </div>
 
     <script type="text/javascript" src="js/script.js"></script>
