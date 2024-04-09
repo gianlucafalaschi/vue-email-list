@@ -10,21 +10,25 @@ createApp({
     },
     methods: {
         getEmailFromApi(){
+            // Fino a quando non ho 10 items nell'array
             // Chamiamo l'api che genera un numero
             // Quando otteniamo la risposta: popoliamo la variabile newEmail
             // con l'email ottenuta dall'api
+        //while (this.emailsArray.length < 10){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').
             then((response) => {
-                const serverData = response.data;
-                this.newEmail = serverData.response;
-                console.log(this.newEmail);
-                console.log(this.emailsArray);
-                this.emailsArray.push(this.newEmail);
-            });
-        }
+                    const serverData = response.data;
+                    this.newEmail = serverData.response;
+                    console.log(this.newEmail);
+                    console.log(this.emailsArray);
+                    this.emailsArray.push(this.newEmail);
+                });
+            //}
+            
+        },
     },
     mounted() {
-        this.getEmailFromApi();
+        // this.getEmailFromApi();
         
     }
 }).mount('#app');
