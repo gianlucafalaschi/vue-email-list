@@ -21,7 +21,7 @@ createApp({
         }
     },
     mounted() {
-
+        this.getEmailFromApi();
         
     }
 }).mount('#app');
