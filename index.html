@@ -12,7 +12,7 @@
     <div id="app">
         <div class="list-container">
             <ul class="email-list">
-                <!-- <li v-for="(element, index) ">email: {{newEmail}}</li> -->
+                <li  v-for="(element, index) in emailsArray">email: {{element}}</li>
             </ul>
         </div>
         <button type="button" @click="getEmailFromApi()">Genera email</button>
