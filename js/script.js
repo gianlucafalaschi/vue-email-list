@@ -27,7 +27,7 @@ createApp({
         },
     },
     mounted() {
-        // this.getEmailFromApi();
+        this.getEmailFromApi();
         
     }
 }).mount('#app');
