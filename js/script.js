@@ -4,7 +4,8 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            newEmail: null
+            emailsArray:[],
+            newEmail: null,
         };
     },
     methods: {
@@ -16,7 +17,9 @@ createApp({
             then((response) => {
                 const serverData = response.data;
                 this.newEmail = serverData.response;
-                console.log(this.newEmail)
+                console.log(this.newEmail);
+                console.log(this.emailsArray);
+                this.emailsArray.push(this.newEmail);
             });
         }
     },
