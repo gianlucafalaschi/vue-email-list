@@ -14,7 +14,7 @@ createApp({
             // Chamiamo l'api che genera un numero
             // Quando otteniamo la risposta: popoliamo la variabile newEmail
             // con l'email ottenuta dall'api
-        //while (this.emailsArray.length < 10){
+        while (this.emailsArray.length < 10){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail').
             then((response) => {
                     const serverData = response.data;
@@ -23,7 +23,7 @@ createApp({
                     console.log(this.emailsArray);
                     this.emailsArray.push(this.newEmail);
                 });
-            //}
+            }
             
         },
     },
