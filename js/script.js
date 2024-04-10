@@ -11,7 +11,7 @@ createApp({
     methods: {
         getEmailFromApi(){
             // Fino a quando non ho 10 items nell'array
-            // Chamiamo l'api che genera un numero
+            // Chiamiamo l'api che genera un numero
             // Quando otteniamo la risposta: popoliamo la variabile newEmail
             // con l'email ottenuta dall'api
         for (let i = 0; i < 10; i++){
